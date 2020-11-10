@@ -5,6 +5,9 @@ body{
 /*
 About Us
 */
+.AboutUs{
+    font-family: 'Yeseva One', cursive ;
+}
 /*
 Design
 */
@@ -22,6 +25,7 @@ Design
     color: #030303;
     background-color: #89DDD8;
     border-color: #89DDD8;
+    font-family: 'Open Sans', sans-serif;
 }
 .design-btn:hover{
 background-color: #b0ece8;
@@ -50,6 +54,7 @@ Production
     color: #030303;
     background-color: #FF9D81;
     border-color: #FF9D81;
+    font-family: 'Open Sans', sans-serif;
 }
 .production-btn:hover{
 background-color: #fcb39f;
@@ -78,6 +83,7 @@ Solution
     color: #030303;
     background-color: #FFDA00;
     border-color: #FFDA00;
+    font-family: 'Open Sans', sans-serif;
 }
 .solution-btn:hover{
 background-color: #ffe551;
