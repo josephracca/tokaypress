@@ -89,3 +89,10 @@ color: #030303;
     color: #030303 !important;
     border-color: #FFDA00 !important;
 }
+/*
+Footer
+*/
+.footer{
+    background-color: #152A29 !important;
+    color: #FFFFFF;
+}
