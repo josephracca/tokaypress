@@ -1,10 +1,29 @@
-
-
+.card{
+    background-color: #CCF1EF;
+    border-radius: 30px;
+}
 .img{
-    width: 15.25rem;
-    height: 15.25rem;
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%;
-    
+    width: 80%;
+    align-self: center;
+    border: 12px solid white;
+}
+.btn{
+    border-radius: 32px;
+    color: #030303;
+    background-color: #89DDD8;
+    border-color: #89DDD8;
+}
+.btn:hover{
+background-color: #b0ece8;
+border-color: #89DDD8;
+color: #030303;
+}
+.btn:active{
+    background-color: #89DDD8 !important;
+    color: #030303 !important;
+    border-color: #89DDD8 !important;
+}
+body{
+    background-image: url(../images/pattern1.png);
+    background-size: cover;
 }
