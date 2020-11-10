@@ -1,29 +1,91 @@
-.card{
+body{
+    background-image: url(../images/pattern1.png);
+    background-size: cover;
+}
+/*
+About Us
+*/
+/*
+Design
+*/
+.design-card{
     background-color: #CCF1EF;
     border-radius: 30px;
 }
-.img{
+.design-img{
     width: 80%;
     align-self: center;
     border: 12px solid white;
 }
-.btn{
+.design-btn{
     border-radius: 32px;
     color: #030303;
     background-color: #89DDD8;
     border-color: #89DDD8;
 }
-.btn:hover{
+.design-btn:hover{
 background-color: #b0ece8;
 border-color: #89DDD8;
 color: #030303;
 }
-.btn:active{
+.design-btn:active{
     background-color: #89DDD8 !important;
     color: #030303 !important;
     border-color: #89DDD8 !important;
 }
-body{
-    background-image: url(../images/pattern1.png);
-    background-size: cover;
+/*
+Production
+*/
+.production-card{
+    background-color: #F9C2AF;
+    border-radius: 30px;
+}
+.production-img{
+    width: 80%;
+    align-self: center;
+    border: 12px solid white;
+}
+.production-btn{
+    border-radius: 32px;
+    color: #030303;
+    background-color: #FF9D81;
+    border-color: #FF9D81;
+}
+.production-btn:hover{
+background-color: #fcb39f;
+border-color: #FF9D81;
+color: #030303;
+}
+.production-btn:active{
+    background-color: #FF9D81!important;
+    color: #030303 !important;
+    border-color: #FF9D81 !important;
+}
+/*
+Solution
+*/
+.solution-card{
+    background-color: #FFF094;
+    border-radius: 30px;
+}
+.solution-img{
+    width: 80%;
+    align-self: center;
+    border: 12px solid white;
+}
+.solution-btn{
+    border-radius: 32px;
+    color: #030303;
+    background-color: #FFDA00;
+    border-color: #FFDA00;
+}
+.solution-btn:hover{
+background-color: #ffe551;
+border-color: #FFDA00;
+color: #030303;
+}
+.solution-btn:active{
+    background-color: #FFDA00 !important;
+    color: #030303 !important;
+    border-color: #FFDA00 !important;
 }
