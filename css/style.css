@@ -12,7 +12,7 @@ body {
     -webkit-filter: blur(8px); */
     position: fixed;
     z-index: 1000;
-background-color: rgba(255, 255, 255, 0.856);
+    background-color: rgba(255, 255, 255, 0.856);
     border-bottom: 1px;
 }
 
@@ -127,4 +127,104 @@ hr {
 .navLinks {
     font-size: 30px;
     font-family: 'Yeseva One', cursive;
+}
+
+/* MODAL IMAGES */
+
+/* The grid: Four equal columns that floats next to each other */
+
+.columnImg {
+    float: left;
+    /* width: 25%; */
+    padding: 0px;
+}
+
+.imgSize{
+    width: 100%;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+}
+
+/* Style the images inside the grid */
+
+.columnImg img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.columnImg img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+
+.rowImg:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+
+.containerImg {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+
+#imgtextImg {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the image */
+
+.closebtnImg {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+@media (min-width:992px) {
+    .modal-lg, .modal-xl {
+        max-width: 1000px
+    }
+}
+
+
+.carousel-caption {
+    position: absolute;
+    right: 65%;
+    top: 5%;
+    left: 10%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #000;
+    text-align: left;
+}
+
+.heroHeight{
+    max-height: 800px;
+}
+
+a {
+    color: #2e2e2e;
+    text-decoration: none;
+    background-color: transparent
+}
+
+a:hover {
+    color: #526b69;
+    text-decoration: underline;
+    text-decoration-color: #89DDD8;
 }
