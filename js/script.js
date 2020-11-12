@@ -1,11 +1,14 @@
 let designBtn = document.getElementById('designBtn');
 let designGate = true;
+designCard = document.getElementById('designCard');
 
 let productionBtn = document.getElementById('productionBtn')
 let productionGate = true;
+let productionCard = document.getElementById('productionCard');
 
 let solutionBtn = document.getElementById('solutionBtn');
 let solutionGate = true;
+let solutionCard = document.getElementById('solutionCard');
 
 let slideInject = document.getElementById('slideInject');
 console.log(slideInject.innerHTML)
@@ -14,29 +17,48 @@ function seeLess(){
     {
         designBtn.innerText = "See Less"
         designBtn.className = "btn btn-primary my-3 px-5 seeLess"
+        designCard.className = "card design-selected text-center";
     } else{
         designBtn.innerText = "See More About Design"
-        designBtn.className = "btn btn-primary my-3 design-btn px-5"
+        designBtn.className = "btn btn-primary my-3 design-btn px-5";
+        designCard.className = "card design-opac text-center";
+
     }
 
     if(productionGate == false && slideInject.innerHTML != "")
     {
-        productionBtn.innerText = "See Less"
-        productionBtn.className = "btn btn-primary my-3 px-5 seeLess"
+        productionBtn.innerText = "See Less";
+        productionBtn.className = "btn btn-primary my-3 px-5 seeLess";
+        productionCard.className = "card production-selected text-center";
     } else{
         productionBtn.innerText = "See More About Production"
-        productionBtn.className = "btn btn-primary my-3 productionBtn px-5"
+        productionBtn.className = "btn btn-primary my-3 productionBtn px-5";
+        productionCard.className = "card production-opac text-center";
+
     }
 
     if(solutionGate == false && slideInject.innerHTML != "")
     {
         solutionBtn.innerText = "See Less"
-        solutionBtn.className = "btn btn-primary my-3 px-5 seeLess"
+        solutionBtn.className = "btn btn-primary my-3 px-5 seeLess";
+        solutionCard.className = "card solution-selected text-center";
     } else{
-        solutionBtn.innerText = "See More About Solutions"
-        solutionBtn.className = "btn btn-primary my-3 solution-btn px-5"
-    }
+        solutionBtn.innerText = "See More About Solutions";
+        solutionBtn.className = "btn btn-primary my-3 solution-btn px-5";
+        solutionCard.className = "card solution-opac text-center";
 
+    }
+    if(slideInject.innerHTML == ""){
+        designCard.className = "card design-card text-center";
+        productionCard.className = "card production-card text-center";
+        solutionCard.className = "card solution-card text-center";
+        designGate = true;
+            productionGate = true;
+            solutionGate= true;
+    }
+    console.log(productionGate);
+    console.log(designGate);
+    console.log(solutionGate);
 }
 
 designBtn.addEventListener('click', function(e){
@@ -51,13 +73,11 @@ designBtn.addEventListener('click', function(e){
         break;
         case false:
             slideInject.innerHTML="";
-            designGate = true;
-            productionGate = false;
-            solutionGate= false;
+            
         break;
-        seeLess();
     }
-    console.log(designGate);
+    seeLess();
+    
 });
 
 productionBtn.addEventListener('click', function(e){
@@ -73,13 +93,13 @@ productionBtn.addEventListener('click', function(e){
         break;
         case false:
             slideInject.innerHTML="";
-            productionGate = true;
-            designGate = false;
-            solutionGate= false;
+            
+            
         break;
-        seeLess();
+        //if slideinject is empty, revert cards to initial state
     }
-    console.log(productionGate);
+    seeLess();
+    
 });
 
 solutionBtn.addEventListener('click', function(e){
@@ -94,13 +114,11 @@ solutionBtn.addEventListener('click', function(e){
         break;
         case false:
             slideInject.innerHTML="";
-            solutionGate= true;
-            designGate = false;
-            productionGate = false;
+            
         break;
-        seeLess();
     }
-    console.log(solutionGate);
+    seeLess();
+    
 });
 
 function solutionsInjection(){
@@ -121,7 +139,7 @@ function solutionsInjection(){
 
     let h1 = document.createElement('h1')
     h1.className = "AboutUs";
-    h1.innerText = "Production";
+    h1.innerText = "Solutions";
 
     let br = document.createElement('br');
 

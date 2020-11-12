@@ -171,3 +171,33 @@ color: #030303;
     color: #030303 !important;
     border-color: white !important;
 }
+/*
+Selected
+*/
+.solution-selected{
+    background-color: #FEDA31;
+    border-radius: 30px;
+}
+.production-selected{
+    background-color: #F06E49;
+    border-radius: 30px;
+}
+.design-selected{
+    background-color: #89DDD8;
+    border-radius: 30px;
+}
+/*
+Opac
+*/
+.solution-opac{
+    background-color: rgba(255, 240, 148, .45);
+    border-radius: 30px;
+}
+.production-opac{
+    background-color: rgba(249, 194, 175, .45);
+    border-radius: 30px;
+}
+.design-opac{
+    background-color: rgba(204, 241, 239, .45);
+    border-radius: 30px;
+}
