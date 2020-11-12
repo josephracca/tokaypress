@@ -1,12 +1,10 @@
-body{
-    background-image: url(../images/pattern1.png);
-    
-}
+
 /*
 About Us
 */
 .AboutUs{
     font-family: 'Yeseva One', cursive ;
+    background-image: url(../images/pattern1.png);
 }
 /*
 Design
@@ -32,6 +30,7 @@ background-color: #b0ece8;
 border-color: #89DDD8;
 color: #030303;
 }
+
 .design-btn:active{
     background-color: #89DDD8 !important;
     color: #030303 !important;
@@ -70,7 +69,7 @@ color: #030303;
 Solution
 */
 .solution-card{
-    background-color: #FFF094;
+    background-color: rgba(255, 240, 148, 1);
     border-radius: 30px;
 }
 .solution-img{
@@ -86,7 +85,7 @@ Solution
     font-family: 'Open Sans', sans-serif;
 }
 .solution-btn:hover{
-background-color: #ffe551;
+    background-color: #ffe551;
 border-color: #FFDA00;
 color: #030303;
 }
@@ -125,6 +124,16 @@ Production-Slides
     font-family: 'Open Sans', sans-serif;
     
 }
+/*
+solutions-Slides
+*/
+.solutions-card-slides{
+    background-image: url(../images/solutions-background.png);
+    background-size: 100% 100%;
+    
+    font-family: 'Open Sans', sans-serif;
+    
+}
 
 /*
 General
@@ -139,7 +148,26 @@ General
     0 100px 80px rgba(0, 0, 0, 0.12)
 }
 .slide-format{
- padding-left: 10%;
+    padding-left: 10%;
  padding-right: 10%;
  font-size: 100%;
+}
+.seeLess{
+    border-radius: 32px;
+    color: #030303;
+    background-color: white;
+    border-color: white;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+}
+.seeLess:hover{
+background-color: #ebebeb;
+border-color: #ebebeb;
+color: #030303;
+}
+
+.seeLess:active{
+    background-color: white !important;
+    color: #030303 !important;
+    border-color: white !important;
 }
