@@ -4,7 +4,8 @@ let designGate = true;
 let productionBtn = document.getElementById('productionBtn')
 let productionGate = true;
 
-letsolutionBtn = document.getElementById('solutionBtn');
+let solutionBtn = document.getElementById('solutionBtn');
+let solutionGate = true;
 
 let slideInject = document.getElementById('slideInject');
 
@@ -60,7 +61,7 @@ function productionInjection(){
     mainRow.className = "row pt-5";
     //--------------------------------------------------------------------------------
     let textCol = document.createElement('div');
-    textCol.className = "col-12 col-lg-7 production-slide-format";
+    textCol.className = "col-12 col-lg-7 slide-format";
 
     let h1 = document.createElement('h1')
     h1.className = "AboutUs";
@@ -100,21 +101,21 @@ function productionInjection(){
     MainImgCol.className = "col-12 d-flex pb-3";
 
     let mainImg = document.createElement('img');
-    mainImg.className = 'img-thumbnail production-slide-img';
+    mainImg.className = 'img-thumbnail slide-img';
     mainImg.setAttribute("src", './images/Production-img1.png')
     //----------
     let imgCol2 = document.createElement('div');
     imgCol2.className = "col-12 col-lg-6 d-flex justify-content-center";
     
     let imgTag2  = document.createElement('img');
-    imgTag2.className = 'img-thumbnail production-slide-img';
+    imgTag2.className = 'img-thumbnail slide-img';
     imgTag2.setAttribute("src", './images/Production-img-2.png');
     //----------
     let imgCol3 = document.createElement('div');
     imgCol3.className = "col-12 col-lg-6 d-flex justify-content-center";
 
     let imgTag3  = document.createElement('img');
-    imgTag3.className = 'img-thumbnail production-slide-img';
+    imgTag3.className = 'img-thumbnail slide-img';
     imgTag3.setAttribute("src", './images/Production-img3.png');
 
 
@@ -166,7 +167,7 @@ function designInjection(){
     mainRow.className = "row pt-5";
     //--------------------------------------------------------------------------------
     let textCol = document.createElement('div');
-    textCol.className = "col-12 col-lg-7 design-slide-format";
+    textCol.className = "col-12 col-lg-7 slide-format";
 
     let h1 = document.createElement('h1')
     h1.className = "AboutUs";
@@ -190,21 +191,21 @@ function designInjection(){
     MainImgCol.className = "col-12 d-flex pb-3";
 
     let mainImg = document.createElement('img');
-    mainImg.className = 'img-thumbnail design-slide-img';
+    mainImg.className = 'img-thumbnail slide-img';
     mainImg.setAttribute("src", './images/Design-Img1.png')
     //----------
     let imgCol2 = document.createElement('div');
     imgCol2.className = "col-12 col-lg-6 d-flex justify-content-center";
     
     let imgTag2  = document.createElement('img');
-    imgTag2.className = 'img-thumbnail design-slide-img';
+    imgTag2.className = 'img-thumbnail slide-img';
     imgTag2.setAttribute("src", './images/Design-Img2.png');
     //----------
     let imgCol3 = document.createElement('div');
     imgCol3.className = "col-12 col-lg-6 d-flex justify-content-center";
 
     let imgTag3  = document.createElement('img');
-    imgTag3.className = 'img-thumbnail design-slide-img';
+    imgTag3.className = 'img-thumbnail slide-img';
     imgTag3.setAttribute("src", './images/Design-Img3.png');
 
 
