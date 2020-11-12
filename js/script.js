@@ -138,7 +138,7 @@ function solutionsInjection(){
     textCol.className = "col-12 col-lg-7 slide-format";
 
     let h1 = document.createElement('h1')
-    h1.className = "AboutUs";
+    h1.className = "Yeseva-font";
     h1.innerText = "Solutions";
 
     let br = document.createElement('br');
@@ -250,7 +250,7 @@ function productionInjection(){
     textCol.className = "col-12 col-lg-7 slide-format";
 
     let h1 = document.createElement('h1')
-    h1.className = "AboutUs";
+    h1.className = "Yeseva-font";
     h1.innerText = "Production";
 
     let br = document.createElement('br');
@@ -356,7 +356,7 @@ function designInjection(){
     textCol.className = "col-12 col-lg-7 slide-format";
 
     let h1 = document.createElement('h1')
-    h1.className = "AboutUs";
+    h1.className = "Yeseva-font";
     h1.innerText = "Design";
 
     let br = document.createElement('br');

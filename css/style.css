@@ -24,6 +24,7 @@ Design
     background-color: #89DDD8;
     border-color: #89DDD8;
     font-family: 'Open Sans', sans-serif;
+    box-shadow: 0px 3px 6px #00000029;
 }
 .design-btn:hover{
 background-color: #b0ece8;
@@ -54,6 +55,7 @@ Production
     background-color: #FF9D81;
     border-color: #FF9D81;
     font-family: 'Open Sans', sans-serif;
+    box-shadow: 0px 3px 6px #00000029;
 }
 .productionBtn:hover{
 background-color: #fcb39f;
@@ -83,6 +85,7 @@ Solution
     background-color: #FFDA00;
     border-color: #FFDA00;
     font-family: 'Open Sans', sans-serif;
+    box-shadow: 0px 3px 6px #00000029;
 }
 .solution-btn:hover{
     background-color: #ffe551;
@@ -139,13 +142,7 @@ solutions-Slides
 General
 */
 .slide-img{
-    box-shadow:
-    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-    0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12)
+    box-shadow: 0px 3px 17px #00000029;
 }
 .slide-format{
     padding-left: 10%;
@@ -159,6 +156,7 @@ General
     border-color: white;
     font-family: 'Open Sans', sans-serif;
     width: 100%;
+    box-shadow: 0px 3px 6px #00000029;
 }
 .seeLess:hover{
 background-color: #ebebeb;
@@ -170,6 +168,9 @@ color: #030303;
     background-color: white !important;
     color: #030303 !important;
     border-color: white !important;
+}
+.Yeseva-font{
+    font-family: 'Yeseva One', cursive;
 }
 /*
 Selected
