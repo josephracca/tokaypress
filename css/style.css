@@ -302,6 +302,17 @@ a:hover {
 
 .messageSent{
     color: white;
-    background-color: #2A938D;
+    background-color: #293131;
     border-color: #2A938D;
+}
+
+.messageSent:hover{
+    color: rgb(139, 139, 139);
+
+}
+
+.modal-content {
+    border: 0px solid rgba(0, 0, 0, .2);
+    border-radius: 1rem;
+    outline: 0;
 }

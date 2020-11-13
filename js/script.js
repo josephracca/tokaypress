@@ -72,5 +72,5 @@ messageBtn.addEventListener("click", function () {
   messageBtn.innerText = "MESSAGE SENT";
   alert("Message Sent!");
 
-  // messageBtn.innerHTML = "<i class="far fa-paper-plane"></i> SEND MESSAGE";"
+  messageBtn.innerHTML = '<b>MESSAGE SENT! </b><i class="far fa-paper-plane pl-1"></i>';
 });
