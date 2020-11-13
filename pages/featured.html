@@ -13,6 +13,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 
+	<link rel="shortcut icon" href="../images/TPlogo.png" />
+
 
 	<title>Tokay Press</title>
 </head>
@@ -23,7 +25,7 @@
 
 	<div class="container-fluid navblur">
 		<nav class="container navbar navbar-expand-lg navbar-light">
-			<img src="../images/TokayLogo.svg">
+			<img src="../images/TokayLogo.svg" class="py-3" alt="The Tokay Press Logo">
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
 				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,34 +34,86 @@
 
 			<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
 				<div class="navbar-nav navLinks">
-					<a class="px-4 nav-link active" href="#">Featured <span class="sr-only">(current)</span></a>
-					<a class="px-4 nav-link" href="#">About</a>
-					<a class="px-4 nav-link" href="#">Contact</a>
+					<a class="col-12 col-md text-right text-md px-4 nav-link active" href="#">Featured <span
+							class="sr-only">(current)</span></a>
+					<a class="col-12 col-md text-right text-md px-4 nav-link" href="#">About</a>
+					<a class="col-12 col-md text-right text-md px-4 nav-link" href="#connect">Contact</a>
 				</div>
 			</div>
 		</nav>
 	</div>
 
 	<!-- HERO/CAROUSEL -->
-	<div class="container-fluid heroImage">
-
-		<img src="../images/featuredHero.png" alt="Our New Website Redesign" style="padding-top: 90px;"
-			class="height100">
-
+	<div id="carouselExampleIndicators" class="carousel slide shadow-md" style="padding-top: 122px;"
+		data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active heroHeight">
+				<img class="d-block w-100" src="../images/featuredHero.png"
+					alt="A few pages from our new Website Redesign">
+				<div class="carousel-caption d-none d-md-block">
+					<h2>2020.
+						<br>Time to refresh,
+						and renew.</h2>
+					<p>Thank you so much for supporting us throughout the years. As designers, it's important for us to
+						always evolve our works and we are proud to announce our newly redesigned website. With
+						everything going on in the world, we wanted to take time to give you a fresh, new experience. We
+						hope you enjoy our new look as much as we do!</p>
+				</div>
+			</div>
+			<div class="carousel-item heroHeight">
+				<img class="d-block w-100" src="../images/featuredHero.png" alt="Second slide">
+				<div class="carousel-caption d-none d-md-block">
+					<h2>2020.<br>Time to refresh,
+						and renew.</h2>
+					<p>Thank you so much for supporting us throughout the years. As designers, it's important for us to
+						always evolve our works and we are proud to announce our newly redesigned website. With
+						everything going on in the world, we wanted to take time to give you a fresh, new experience. We
+						hope you enjoy our new look as much as we do!</p>
+				</div>
+			</div>
+		</div>
+		<div class="carousel-item heroHeight">
+			<img class="d-block w-100" src="../images/featuredHero.png" alt="Third slide">
+			<div class="carousel-caption d-none d-md-block">
+				<h2>2020.<br>Time to refresh,
+					and renew.</h2>
+				<p>Thank you so much for supporting us throughout the years. As designers, it's important for us to
+					always evolve our works and we are proud to announce our newly redesigned website. With everything
+					going on in the world, we wanted to take time to give you a fresh, new experience. We hope you enjoy
+					our new look as much as we do!</p>
+			</div>
+		</div>
 	</div>
+	</div>
+	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+	</div>
+
 	<!-- FEATURED CARDS -->
 
 	<div class="container pt-5">
 		<h1 class="text-center">Featured Posts</h1>
 	</div>
 
-	<div class="container py-5">
+	<div class="container py-5 px-5 px-md">
 		<div class="row featuredCard lightBlue" height="450px">
 			<div class="col-12 col-md-4 px-0">
-				<img class="height100 cardImageRadius" src="../images/featuredHero.png" width="100%">
+				<img class="height100 cardImageRadius" src="../images/featuredHero.png" width="100%"
+					alt="Alt tag lives here">
 			</div>
 			<div class="col-12 col-md-8 py-4 px-5">
-				<h2>Veteran's Day</h2>
+				<h2>Veteran's Day TOP</h2>
 				<h3>November 11, 2020</h3>
 				<hr>
 				<p>Wishing everyone who has served our country a Happy Veterans Day and a big thank you especially to
@@ -67,17 +121,19 @@
 					<br></p>
 
 				<!-- Button trigger modal -->
-				<button type="button" class="btn btn-light shadow-sm" data-toggle="modal" data-target="#exampleModal">
+				<button id="modalTrigger" type="button" class="btn btn-light shadow-sm" data-toggle="modal"
+					data-target="#exampleModal">
 					CLICK FOR MORE >
 				</button>
 
 			</div>
 		</div>
 		<hr>
-		
+
 		<div class="row featuredCard lightYellow" height="450px">
 			<div class="col-12 col-md-4 px-0">
-				<img class="height100 cardImageRadius" src="../images/featuredHero.png" width="100%">
+				<img class="height100 cardImageRadius" src="../images/featuredHero.png" width="100%"
+					alt="Alt tag lives here">
 			</div>
 			<div class="col-12 col-md-8 py-4 px-5">
 				<h2>Veteran's Day</h2>
@@ -98,7 +154,8 @@
 
 		<div class="row featuredCard lightPink" height="450px">
 			<div class="col-12 col-md-4 px-0">
-				<img class="height100 cardImageRadius" src="../images/featuredHero.png" width="100%">
+				<img class="height100 cardImageRadius" src="../images/featuredHero.png" width="100%"
+					alt="Alt tag lives here">
 			</div>
 			<div class="col-12 col-md-8 py-4 px-5">
 				<h2>Veteran's Day</h2>
@@ -117,74 +174,77 @@
 		</div>
 		<hr>
 
-			<div class="row featuredCard lightBlue" height="450px">
-				<div class="col-12 col-md-4 px-0">
-					<img class="height100 cardImageRadius" src="../images/featuredHero.png" width="100%">
-				</div>
-				<div class="col-12 col-md-8 py-4 px-5">
-					<h2>Veteran's Day</h2>
-					<h3>November 11, 2020</h3>
-					<hr>
-					<p>Wishing everyone who has served our country a Happy Veterans Day and a big thank you especially to
-						our very own Jon Peters, our pressman, who served in the Marines.
-						<br></p>
-	
-					<!-- Button trigger modal -->
-					<button type="button" class="btn btn-light shadow-sm" data-toggle="modal" data-target="#exampleModal">
-						CLICK FOR MORE >
-					</button>
-	
-				</div>
+		<div class="row featuredCard lightBlue" height="450px">
+			<div class="col-12 col-md-4 px-0">
+				<img class="height100 cardImageRadius" src="../images/featuredHero.png" width="100%"
+					alt="Alt tag lives here">
 			</div>
-			<hr>
-			
-			<div class="row featuredCard lightYellow" height="450px">
-				<div class="col-12 col-md-4 px-0">
-					<img class="height100 cardImageRadius" src="../images/featuredHero.png" width="100%">
-				</div>
-				<div class="col-12 col-md-8 py-4 px-5">
-					<h2>Veteran's Day</h2>
-					<h3>November 11, 2020</h3>
-					<hr>
-					<p>Wishing everyone who has served our country a Happy Veterans Day and a big thank you especially to
-						our very own Jon Peters, our pressman, who served in the Marines.
-						<br></p>
-	
-					<!-- Button trigger modal -->
-					<button type="button" class="btn btn-light shadow-sm" data-toggle="modal" data-target="#exampleModal">
-						CLICK FOR MORE >
-					</button>
-	
-				</div>
+			<div class="col-12 col-md-8 py-4 px-5">
+				<h2>Veteran's Day</h2>
+				<h3>November 11, 2020</h3>
+				<hr>
+				<p>Wishing everyone who has served our country a Happy Veterans Day and a big thank you especially to
+					our very own Jon Peters, our pressman, who served in the Marines.
+					<br></p>
+
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-light shadow-sm" data-toggle="modal" data-target="#exampleModal">
+					CLICK FOR MORE >
+				</button>
+
 			</div>
-			<hr>
-	
-			<div class="row featuredCard lightPink" height="450px">
-				<div class="col-12 col-md-4 px-0">
-					<img class="height100 cardImageRadius" src="../images/featuredHero.png" width="100%">
-				</div>
-				<div class="col-12 col-md-8 py-4 px-5">
-					<h2>Veteran's Day</h2>
-					<h3>November 11, 2020</h3>
-					<hr>
-					<p>Wishing everyone who has served our country a Happy Veterans Day and a big thank you especially to
-						our very own Jon Peters, our pressman, who served in the Marines.
-						<br></p>
-	
-					<!-- Button trigger modal -->
-					<button type="button" class="btn btn-light shadow-sm" data-toggle="modal" data-target="#exampleModal">
-						CLICK FOR MORE >
-					</button>
-	
-				</div>
+		</div>
+		<hr>
+
+		<div class="row featuredCard lightYellow" height="450px">
+			<div class="col-12 col-md-4 px-0">
+				<img class="height100 cardImageRadius" src="../images/featuredHero.png" width="100%"
+					alt="Alt tag lives here">
 			</div>
-			<hr>
+			<div class="col-12 col-md-8 py-4 px-5">
+				<h2>Veteran's Day</h2>
+				<h3>November 11, 2020</h3>
+				<hr>
+				<p>Wishing everyone who has served our country a Happy Veterans Day and a big thank you especially to
+					our very own Jon Peters, our pressman, who served in the Marines.
+					<br></p>
+
+				<!-- Button trigger modal -->
+				<button id="" type="button" class="btn btn-light shadow-sm">
+					<!-- data-toggle="modal" data-target="#exampleModal" -->
+					CLICK FOR MORE >
+				</button>
+
+			</div>
+		</div>
+		<hr>
+
+		<div class="row featuredCard lightPink" height="450px">
+			<div class="col-12 col-md-4 px-0">
+				<img class="height100 cardImageRadius" src="../images/featuredHero.png" width="100%"
+					alt="Alt tag lives here">
+			</div>
+			<div class="col-12 col-md-8 py-4 px-5">
+				<h2>Veteran's Day</h2>
+				<h3>November 11, 2020</h3>
+				<hr>
+				<p>Wishing everyone who has served our country a Happy Veterans Day and a big thank you especially to
+					our very own Jon Peters, our pressman, who served in the Marines.
+					<br></p>
+
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-light shadow-sm" data-toggle="modal" data-target="#exampleModal">
+					CLICK FOR MORE >
+				</button>
+
+			</div>
+		</div>
+		<hr>
 	</div>
 
 	<!-- CONNECT/CONTACT -->
 
-	<!-- FOOTER -->
-	<div class="container-fluid connectHolder shadow-md pt-5">
+	<div id="connect" class="container-fluid connectHolder shadow-md pt-5">
 		<div class="container">
 			<div class="row pb-5">
 				<div class="col-6">
@@ -195,17 +255,23 @@
 							<h2><i class="fab fa-facebook-square brightblue"></i></h2>
 						</div>
 						<div class="col">
-							<h2> Tokay Press</h2>
+							<a href="https://www.facebook.com/tokaypress" target="_blank">
+								<h2> Tokay Press</h2>
+							</a>
 						</div>
 					</div>
 					<hr>
 					<div class="row">
+
 						<div class="col-1">
 							<h2><i class="fab fa-instagram-square brightblue"></i></h2>
 						</div>
 						<div class="col">
-							<h2> Tokay Press</h2>
+							<a href="https://www.instagram.com/tokaypress/" target="_blank">
+								<h2> @tokaypress</h2>
+							</a>
 						</div>
+
 					</div>
 					<hr>
 					<div class="row">
@@ -213,7 +279,9 @@
 							<h2><i class="fab fa-twitter-square brightblue"></i></h2>
 						</div>
 						<div class="col">
-							<h2> Tokay Press</h2>
+							<a href="https://www.instagram.com/tokaypress/" target="_blank">
+								<h2> @tokaypress</h2>
+							</a>
 						</div>
 					</div>
 					<!-- <hr>
@@ -247,7 +315,7 @@
 						<div class="row">
 							<div class="col">
 								<a href="../index.html"><button type="button" class="btn btn-brightblue"><i
-									class="far fa-envelope"></i> SEND MESSAGE</button></a>
+											class="far fa-envelope"></i> SEND MESSAGE</button></a>
 							</div>
 						</div>
 					</form>
@@ -256,59 +324,14 @@
 		</div>
 	</div>
 
-
+	<!-- FOOTER -->
 
 	<!-- Modal -->
 	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
 		aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h2 class="modal-title" id="exampleModalLabel">Valley Garden Fair</h2>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<div class="row">
-						<div class="col-10">
-							<img src="../images/featuredHero.png" width="100%">
-						</div>
-						<div class="col-2">
-							<div class="col-12">
-								<img src="../images/featuredHero.png" width="100%">
-							</div>
-							<div class="col-12">
-								<img src="../images/featuredHero.png" width="100%">
-							</div>
-							<div class="col-12">
-								<img src="../images/featuredHero.png" width="100%">
-							</div>
-							<div class="col-12">
-								<img src="../images/featuredHero.png" width="100%">
-							</div>
-							<div class="col-12"></div>
-							<div class="col-12"></div>
-							<div class="col-12"></div>
-						</div>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<div class="row">
-						<div class="col-7">
-							<p>
-								Wishing everyone who has served our country a Happy Veterans Day and a big thank you especially to our very own Jon Peters, our pressman, who served in the Marines.
-							</p>
-						</div>
-						<div class="col-5">
-							CLOSE
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						</div>
-					</div>
 
-				</div>
-			</div>
-		</div>
+		
+
 	</div>
 
 	<!-- MAPS -->
@@ -318,7 +341,7 @@
 
 	<!-- ALL RIGHTS RESERVED -->
 	<div class="container-fluid footer">
-		<p>Tokay Press, Inc. |  All Rights Reserved
+		<p>Tokay Press, Inc. | All Rights Reserved
 			<br>Copyright © 2010-2014</p>
 	</div>
 
