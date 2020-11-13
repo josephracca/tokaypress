@@ -8,11 +8,9 @@ body {
 }
 
 .navblur {
-    /* filter: blur(8px);
-    -webkit-filter: blur(8px); */
     position: fixed;
     z-index: 1000;
-background-color: rgba(255, 255, 255, 0.856);
+    background-color: rgba(255, 255, 255, 0.856);
     border-bottom: 1px;
 }
 
@@ -52,9 +50,30 @@ hr {
     border-width: 2px 0 0 0;
 }
 
-.cardImageRadius {
-    border-radius: 20px 0 0 20px;
+.height282{
+    max-height: 100%;
+
 }
+
+@media (min-width: 1200px) { 
+    .height282{
+        max-height: 282px;
+    
+    }
+ }
+
+
+.cardImageRadius {
+    border-radius: 20px 20px 0 0;
+}
+
+@media (min-width: 768px) { 
+    .cardImageRadius {
+        border-radius: 20px 0 0 20px;
+    }
+ }
+
+
 
 .footer {
     background-color: #152A29;
@@ -65,8 +84,13 @@ hr {
 }
 
 .mapHolder {
-    height: 369px;
     background-color: #CCF1EF;
+}
+
+
+.boxShadow{
+    box-shadow:20px 20px 40px rgb(151, 151, 151);  
+
 }
 
 .connectHolder {
@@ -125,6 +149,161 @@ hr {
 }
 
 .navLinks {
-    font-size: 30px;
+    font-size: 1.75rem;
     font-family: 'Yeseva One', cursive;
+}
+
+/* MODAL IMAGES */
+
+/* The grid: Four equal columns that floats next to each other */
+
+.columnImg {
+    float: left;
+    padding: 0px;
+}
+
+.imgSize{
+    width: 100%;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+}
+
+/* Style the images inside the grid */
+
+.columnImg img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.columnImg img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+
+.rowImg:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+
+.containerImg {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+
+#imgtextImg {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the image */
+
+.closebtnImg {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+@media (min-width:992px) {
+    .modal-lg, .modal-xl {
+        max-width: 1000px
+    }
+}
+
+
+.carousel-caption {
+    position: absolute;
+    right: 65%;
+    top: 5%;
+    left: 10%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #000;
+    text-align: left;
+    line-height: 130%;
+}
+
+.carousel-caption2 {
+    position: absolute;
+    right: 10%;
+    top: 15%;
+    left: 65%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: black;
+    text-align: left;
+    line-height: 130%;
+}
+
+.carousel-caption-3 {
+    position: absolute;
+    right: 10%;
+    top: 45%;
+    left: 65%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    text-align: left;
+    line-height: 130%;
+}
+
+.heroHeight{
+    max-height: 700px;
+}
+
+.fitCover{
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+a {
+    color: #2e2e2e;
+    text-decoration: none;
+    background-color: transparent
+}
+
+a:hover {
+    color: #526b69;
+    text-decoration: underline;
+    text-decoration-color: #89DDD8;
+}
+
+.map-border-white{
+    border-style: solid;
+    border-width: 7px;
+    border-color: white;
+}
+
+.messageSent{
+    color: white;
+    background-color: #293131;
+    border-color: #2A938D;
+}
+
+.messageSent:hover{
+    color: rgb(139, 139, 139);
+
+}
+
+.modal-content {
+    border: 0px solid rgba(0, 0, 0, .2);
+    border-radius: 1rem;
+    outline: 0;
 }
