@@ -1,27 +1,43 @@
 let designBtn = document.getElementById('designBtn');
-let designGate = true;
 designCard = document.getElementById('designCard');
+let designBtn2 = document.getElementById('designBtn2');
+designCard2 = document.getElementById('designCard2');
+let designGate = true;
 
 let productionBtn = document.getElementById('productionBtn')
-let productionGate = true;
 let productionCard = document.getElementById('productionCard');
+let productionBtn2 = document.getElementById('productionBtn2')
+let productionCard2 = document.getElementById('productionCard2');
+let productionGate = true;
 
 let solutionBtn = document.getElementById('solutionBtn');
-let solutionGate = true;
 let solutionCard = document.getElementById('solutionCard');
+let solutionBtn2 = document.getElementById('solutionBtn2');
+let solutionCard2 = document.getElementById('solutionCard2');
+let solutionGate = true;
 
 let slideInject = document.getElementById('slideInject');
-console.log(slideInject.innerHTML)
+
+
+
 function seeLess(){
     if(designGate == false && slideInject.innerHTML != "")
     {
         designBtn.innerText = "See Less"
         designBtn.className = "btn btn-primary my-3 px-5 seeLess"
         designCard.className = "card design-selected text-center";
+        //Mobile
+        designBtn2.innerText = "See Less"
+        designBtn2.className = "btn btn-primary my-3 px-5 seeLess"
+        designCard2.className = "card design-selected text-center mobile-cards";
     } else{
         designBtn.innerText = "See More About Design"
         designBtn.className = "btn btn-primary my-3 design-btn px-5";
         designCard.className = "card design-opac text-center";
+        //mobile
+        designBtn2.innerText = "See More About Design"
+        designBtn2.className = "btn btn-primary my-3 design-btn px-5";
+        designCard2.className = "card design-opac text-center mobile-cards";
 
     }
 
@@ -30,10 +46,19 @@ function seeLess(){
         productionBtn.innerText = "See Less";
         productionBtn.className = "btn btn-primary my-3 px-5 seeLess";
         productionCard.className = "card production-selected text-center";
+        //mobile
+        productionBtn2.innerText = "See Less";
+        productionBtn2.className = "btn btn-primary my-3 px-5 seeLess";
+        productionCard2.className = "card production-selected text-center mobile-cards";
     } else{
         productionBtn.innerText = "See More About Production"
         productionBtn.className = "btn btn-primary my-3 productionBtn px-5";
         productionCard.className = "card production-opac text-center";
+        //Mobile
+        productionBtn2.innerText = "See More About Production"
+        productionBtn2.className = "btn btn-primary my-3 productionBtn px-5";
+        productionCard2.className = "card production-opac text-center mobile-cards";
+        
 
     }
 
@@ -42,16 +67,28 @@ function seeLess(){
         solutionBtn.innerText = "See Less"
         solutionBtn.className = "btn btn-primary my-3 px-5 seeLess";
         solutionCard.className = "card solution-selected text-center";
+        //Mobile
+        solutionBtn2.innerText = "See Less"
+        solutionBtn2.className = "btn btn-primary my-3 px-5 seeLess";
+        solutionCard2.className = "card solution-selected text-center mobile-cards";
     } else{
         solutionBtn.innerText = "See More About Solutions";
         solutionBtn.className = "btn btn-primary my-3 solution-btn px-5";
         solutionCard.className = "card solution-opac text-center";
+        //Mobile
+        solutionBtn2.innerText = "See More About Solutions";
+        solutionBtn2.className = "btn btn-primary my-3 solution-btn px-5";
+        solutionCard2.className = "card solution-opac text-center mobile-cards";
 
     }
     if(slideInject.innerHTML == ""){
         designCard.className = "card design-card text-center";
         productionCard.className = "card production-card text-center";
         solutionCard.className = "card solution-card text-center";
+        //Mobile
+        designCard2.className = "card design-card text-center mobile-cards";
+        productionCard2.className = "card production-card text-center mobile-cards";
+        solutionCard2.className = "card solution-card text-center mobile-cards";
         designGate = true;
             productionGate = true;
             solutionGate= true;
@@ -102,6 +139,67 @@ productionBtn.addEventListener('click', function(e){
     
 });
 
+solutionBtn2.addEventListener('click', function(e){
+    console.log("Production Slide");
+    switch (solutionGate){
+        case true:
+            slideInject.innerHTML="";
+            solutionsInjection();
+            solutionGate= false;
+            designGate = true;
+            productionGate = true;
+        break;
+        case false:
+            slideInject.innerHTML="";
+            
+        break;
+    }
+    seeLess();
+    
+});
+
+//Mobile
+designBtn2.addEventListener('click', function(e){
+    console.log("Desgn Slide");
+    switch (designGate){
+        case true:
+            slideInject.innerHTML="";
+            designInjection();
+            designGate = false;
+            productionGate = true;
+            solutionGate= true;
+        break;
+        case false:
+            slideInject.innerHTML="";
+            
+        break;
+    }
+    seeLess();
+    
+});
+
+productionBtn2.addEventListener('click', function(e){
+    console.log("Production Slide");
+    switch (productionGate){
+        case true:
+            slideInject.innerHTML="";
+            productionInjection();
+            productionGate = false;
+            designGate = true;
+            solutionGate= true;
+            
+        break;
+        case false:
+            slideInject.innerHTML="";
+            
+            
+        break;
+        //if slideinject is empty, revert cards to initial state
+    }
+    seeLess();
+    
+});
+
 solutionBtn.addEventListener('click', function(e){
     console.log("Production Slide");
     switch (solutionGate){
@@ -120,6 +218,10 @@ solutionBtn.addEventListener('click', function(e){
     seeLess();
     
 });
+//End
+
+
+
 
 function solutionsInjection(){
     console.log('Production-injected');

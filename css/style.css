@@ -2,9 +2,11 @@
 /*
 About Us
 */
+.background{
+    background-image: url(../images/pattern1.png);
+}
 .AboutUs{
     font-family: 'Yeseva One', cursive ;
-    background-image: url(../images/pattern1.png);
 }
 /*
 Design
@@ -203,4 +205,14 @@ Opac
     border-radius: 30px;
 }
 
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  
+}
+        .mobile-cards{
+          display: inline-block;
+          
+        }
 
