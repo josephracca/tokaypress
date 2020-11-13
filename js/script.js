@@ -1,6 +1,34 @@
 // alert('Hi!');
 
 
+let exampleModal = document.getElementById('exampleModal');
+let modalTrigger = document.getElementById('modalTrigger');
+
+//clears innerHTML
+// let closeModalTop
+
+modalTrigger.addEventListener('click', function(){
+//this needs to open the model with the correct content
+console.log('text');
+
+loadModal('../pages/modal1.html');
+});
+
+// MODAL XMLHTTPREQUEST
+
+function loadModal(url){
+  let xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200){
+      console.log(this.responseText);
+      exampleModal.innerHTML = this.responseText;
+    }
+  };
+  xhttp.open('GET', url, true);
+  xhttp.send();
+}
+
+
 
 
 function myFunction(imgs) {
