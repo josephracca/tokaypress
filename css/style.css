@@ -52,8 +52,22 @@ hr {
     border-width: 2px 0 0 0;
 }
 
+.height282{
+    max-height: 100%;
+
+}
+
+@media (min-width: 1200px) { 
+    .height282{
+        max-height: 282px;
+    
+    }
+ }
+
+
 .cardImageRadius {
     border-radius: 20px 20px 0 0;
+    /* max-height: 282px; */
 }
 
 @media (min-width: 768px) { 
@@ -142,7 +156,7 @@ hr {
     font-size: 1.75rem;
     font-family: 'Yeseva One', cursive;
 }
-
+c
 /* MODAL IMAGES */
 
 /* The grid: Four equal columns that floats next to each other */
@@ -225,11 +239,47 @@ hr {
     padding-bottom: 20px;
     color: #000;
     text-align: left;
+    line-height: 130%;
+}
+
+.carousel-caption2 {
+    position: absolute;
+    right: 10%;
+    top: 15%;
+    left: 65%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: black;
+    text-align: left;
+    line-height: 130%;
+}
+
+.carousel-caption-3 {
+    position: absolute;
+    right: 10%;
+    top: 45%;
+    left: 65%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    text-align: left;
+    line-height: 130%;
 }
 
 .heroHeight{
-    max-height: 800px;
-    object-position: bottom;
+    max-height: 700px;
+    
+    /* object-position: bottom; */
+}
+
+.fitCover{
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    /* object-position: center; */
+
 }
 
 a {
@@ -244,7 +294,7 @@ a:hover {
     text-decoration-color: #89DDD8;
 }
 
-.border-white{
+.map-border-white{
     border-style: solid;
     border-width: 7px;
     border-color: white;
@@ -254,8 +304,4 @@ a:hover {
     color: white;
     background-color: #2A938D;
     border-color: #2A938D;
-}
-
-.carouselText{
-    line-height: 130%;
 }

@@ -1,20 +1,45 @@
 // alert('Hi!');
+let exampleModal = document.getElementById('inject');
+let modalTrigger1 = document.getElementById('modalTrigger1');
+let modalTrigger2 = document.getElementById('modalTrigger2');
+let modalTrigger3 = document.getElementById('modalTrigger3');
+let modalTrigger4 = document.getElementById('modalTrigger4');
+let modalTrigger5 = document.getElementById('modalTrigger5');
+let modalTrigger6 = document.getElementById('modalTrigger6');
 
-let exampleModal = document.getElementById("exampleModal");
-let modalTrigger = document.getElementById("modalTrigger");
 
-//clears innerHTML
-// let closeModalTop
 
-modalTrigger.addEventListener("click", function () {
-  //this needs to open the model with the correct content
-  console.log("text");
 
-  loadModal("../pages/modal1.html");
+modalTrigger1.addEventListener('click', function () {
+  loadModal('../pages/modal1.html');
 });
 
-// MODAL XMLHTTPREQUEST
+modalTrigger2.addEventListener('click', function () {
+  loadModal('../pages/modal2.html');
+});
 
+modalTrigger3.addEventListener('click', function () {
+  loadModal('../pages/modal3.html');
+});
+
+modalTrigger4.addEventListener('click', function () {
+  loadModal('../pages/modal4.html');
+});
+
+modalTrigger5.addEventListener('click', function () {
+  loadModal('../pages/modal5.html');
+});
+
+modalTrigger6.addEventListener('click', function () {
+  loadModal('../pages/modal6.html');
+});
+
+
+
+
+
+
+// MODAL XMLHTTPREQUEST
 function loadModal(url) {
   let xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
@@ -23,10 +48,9 @@ function loadModal(url) {
       exampleModal.innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", url, true);
+  xhttp.open('GET', url, true);
   xhttp.send();
 }
-
 function myFunction(imgs) {
   // Get the expanded image
   var expandImg = document.getElementById("expandedImg");
@@ -45,7 +69,7 @@ let messageBtn = document.getElementById("messageBtn");
 
 messageBtn.addEventListener("click", function () {
   messageBtn.classList.add('messageSent');
-  messageBtn.innerText="MESSAGE SENT";
+  messageBtn.innerText = "MESSAGE SENT";
   alert("Message Sent!");
 
   // messageBtn.innerHTML = "<i class="far fa-paper-plane"></i> SEND MESSAGE";"
