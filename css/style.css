@@ -103,7 +103,7 @@ color: #030303;
 /*
 Footer
 */
-.footer{
+.footer-index{
     background-color: #152A29 !important;
     color: #FFFFFF;
 }
@@ -216,7 +216,11 @@ Opac
           display: inline-block;
           
         }
+/*
 
+Matt's work ends here
+
+*/
 
 body {
     background-color: #F3F3F3;
