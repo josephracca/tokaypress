@@ -285,21 +285,21 @@ function solutionsInjection(){
 
     let mainImg = document.createElement('img');
     mainImg.className = 'img-thumbnail slide-img';
-    mainImg.setAttribute("src", './images/Production-img1.png')
+    mainImg.setAttribute("src", './images/solution-img1.png')
     //----------
     let imgCol2 = document.createElement('div');
     imgCol2.className = "col-12 col-lg-6 d-flex justify-content-center";
     
     let imgTag2  = document.createElement('img');
     imgTag2.className = 'img-thumbnail slide-img';
-    imgTag2.setAttribute("src", './images/Production-img-2.png');
+    imgTag2.setAttribute("src", './images/solution-img2.png');
     //----------
     let imgCol3 = document.createElement('div');
     imgCol3.className = "col-12 col-lg-6 d-flex justify-content-center";
 
     let imgTag3  = document.createElement('img');
     imgTag3.className = 'img-thumbnail slide-img';
-    imgTag3.setAttribute("src", './images/Production-img3.png');
+    imgTag3.setAttribute("src", './images/solution-img3.png');
 
 
     //Append elements
