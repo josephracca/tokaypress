@@ -8,8 +8,6 @@ body {
 }
 
 .navblur {
-    /* filter: blur(8px);
-    -webkit-filter: blur(8px); */
     position: fixed;
     z-index: 1000;
     background-color: rgba(255, 255, 255, 0.856);
@@ -67,7 +65,6 @@ hr {
 
 .cardImageRadius {
     border-radius: 20px 20px 0 0;
-    /* max-height: 282px; */
 }
 
 @media (min-width: 768px) { 
@@ -87,7 +84,6 @@ hr {
 }
 
 .mapHolder {
-    /* height: 369px; */
     background-color: #CCF1EF;
 }
 
@@ -156,14 +152,13 @@ hr {
     font-size: 1.75rem;
     font-family: 'Yeseva One', cursive;
 }
-c
+
 /* MODAL IMAGES */
 
 /* The grid: Four equal columns that floats next to each other */
 
 .columnImg {
     float: left;
-    /* width: 25%; */
     padding: 0px;
 }
 
@@ -270,16 +265,12 @@ c
 
 .heroHeight{
     max-height: 700px;
-    
-    /* object-position: bottom; */
 }
 
 .fitCover{
     height: auto;
     width: 100%;
     object-fit: contain;
-    /* object-position: center; */
-
 }
 
 a {
