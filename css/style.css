@@ -139,7 +139,7 @@ hr {
 }
 
 .navLinks {
-    font-size: 30px;
+    font-size: 1.75rem;
     font-family: 'Yeseva One', cursive;
 }
 
@@ -256,3 +256,6 @@ a:hover {
     border-color: #2A938D;
 }
 
+.carouselText{
+    line-height: 130%;
+}

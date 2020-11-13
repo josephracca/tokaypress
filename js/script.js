@@ -44,8 +44,9 @@ function myFunction(imgs) {
 let messageBtn = document.getElementById("messageBtn");
 
 messageBtn.addEventListener("click", function () {
-  alert("Message Sent!");
   messageBtn.classList.add('messageSent');
   messageBtn.innerText="MESSAGE SENT";
+  alert("Message Sent!");
+
   // messageBtn.innerHTML = "<i class="far fa-paper-plane"></i> SEND MESSAGE";"
 });
