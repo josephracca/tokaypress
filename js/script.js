@@ -1,8 +1,9 @@
 // alert('Hi!');
 
 
-let exampleModal = document.getElementById('exampleModal');
+let exampleModal = document.getElementById('inject');
 let modalTrigger = document.getElementById('modalTrigger');
+
 
 //clears innerHTML
 // let closeModalTop
