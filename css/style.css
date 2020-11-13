@@ -53,8 +53,16 @@ hr {
 }
 
 .cardImageRadius {
-    border-radius: 20px 0 0 20px;
+    border-radius: 20px 20px 0 0;
 }
+
+@media (min-width: 768px) { 
+    .cardImageRadius {
+        border-radius: 20px 0 0 20px;
+    }
+ }
+
+
 
 .footer {
     background-color: #152A29;
@@ -65,8 +73,14 @@ hr {
 }
 
 .mapHolder {
-    height: 369px;
+    /* height: 369px; */
     background-color: #CCF1EF;
+}
+
+
+.boxShadow{
+    box-shadow:20px 20px 40px rgb(151, 151, 151);  
+
 }
 
 .connectHolder {
@@ -215,6 +229,7 @@ hr {
 
 .heroHeight{
     max-height: 800px;
+    object-position: bottom;
 }
 
 a {
@@ -228,3 +243,16 @@ a:hover {
     text-decoration: underline;
     text-decoration-color: #89DDD8;
 }
+
+.border-white{
+    border-style: solid;
+    border-width: 7px;
+    border-color: white;
+}
+
+.messageSent{
+    color: white;
+    background-color: #2A938D;
+    border-color: #2A938D;
+}
+
