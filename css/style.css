@@ -3,11 +3,13 @@
 /*
 About Us
 */
-.background{
-    background-image: url(../images/pattern1.png);
-}
+
 .AboutUs{
     font-family: 'Yeseva One', cursive ;
+    background-image: url(../images/pattern1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 /*
 Design
@@ -15,6 +17,10 @@ Design
 .design-card{
     background-color: #CCF1EF;
     border-radius: 30px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 0px 3px 6px #00000029;
 }
 .design-img{
     width: 80%;
@@ -46,6 +52,10 @@ Production
 .production-card{
     background-color: #F9C2AF;
     border-radius: 30px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 0px 3px 6px #00000029;
 }
 .production-img{
     width: 80%;
@@ -76,6 +86,10 @@ Solution
 .solution-card{
     background-color: rgba(255, 240, 148, 1);
     border-radius: 30px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 0px 3px 6px #00000029;
 }
 .solution-img{
     width: 80%;
@@ -103,9 +117,12 @@ color: #030303;
 /*
 Footer
 */
-.footer-index{
+.footer{
     background-color: #152A29 !important;
     color: #FFFFFF;
+    text-align: center;
+    font-weight: 100;
+    padding: 10px 0 10px 0;
 }
 /*
 Slides
@@ -214,13 +231,13 @@ Opac
 }
         .mobile-cards{
           display: inline-block;
+          border-width: 10px;
+          border-style: solid;
+          border-color: white;
+          box-shadow: 0px 3px 6px #00000029;
           
         }
-/*
 
-Matt's work ends here
-
-*/
 
 body {
     background-color: #F3F3F3;
@@ -297,18 +314,13 @@ hr {
     }
  }
 
-
-
-.footer {
-    background-color: #152A29;
-    color: white;
-    text-align: center;
-    font-weight: 100;
-    padding: 10px 0 10px 0;
-}
-
 .mapHolder {
     background-color: #CCF1EF;
+    background-image: url(../images/pattern2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    fill-opacity: 50%;
 }
 
 
