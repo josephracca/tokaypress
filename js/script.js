@@ -32,11 +32,11 @@ function seeLess(){
         designBtn2.className = "btn btn-primary my-3 px-5 seeLess"
         designCard2.className = "card design-selected text-center mobile-cards";
     } else{
-        designBtn.innerText = "See More About Design"
+        designBtn.innerText = "More About Design"
         designBtn.className = "btn btn-primary my-3 design-btn px-5";
         designCard.className = "card design-opac text-center";
         //mobile
-        designBtn2.innerText = "See More About Design"
+        designBtn2.innerText = "More About Design"
         designBtn2.className = "btn btn-primary my-3 design-btn px-5";
         designCard2.className = "card design-opac text-center mobile-cards";
 
@@ -49,15 +49,15 @@ function seeLess(){
         productionCard.className = "card production-selected text-center";
         //mobile
         productionBtn2.innerText = "See Less";
-        productionBtn2.className = "btn btn-primary my-3 px-5 seeLess";
+        productionBtn2.className = "btn btn-primary my-3 px-4 seeLess";
         productionCard2.className = "card production-selected text-center mobile-cards";
     } else{
-        productionBtn.innerText = "See More About Production"
+        productionBtn.innerText = "More About Production"
         productionBtn.className = "btn btn-primary my-3 productionBtn px-5";
         productionCard.className = "card production-opac text-center";
         //Mobile
-        productionBtn2.innerText = "See More About Production"
-        productionBtn2.className = "btn btn-primary my-3 productionBtn px-5";
+        productionBtn2.innerText = "More About Production"
+        productionBtn2.className = "btn btn-primary my-3 productionBtn px-4";
         productionCard2.className = "card production-opac text-center mobile-cards";
         
 
@@ -70,15 +70,15 @@ function seeLess(){
         solutionCard.className = "card solution-selected text-center";
         //Mobile
         solutionBtn2.innerText = "See Less"
-        solutionBtn2.className = "btn btn-primary my-3 px-5 seeLess";
+        solutionBtn2.className = "btn btn-primary my-3 px-4 seeLess";
         solutionCard2.className = "card solution-selected text-center mobile-cards";
     } else{
-        solutionBtn.innerText = "See More About Solutions";
+        solutionBtn.innerText = "More About Solutions";
         solutionBtn.className = "btn btn-primary my-3 solution-btn px-5";
         solutionCard.className = "card solution-opac text-center";
         //Mobile
-        solutionBtn2.innerText = "See More About Solutions";
-        solutionBtn2.className = "btn btn-primary my-3 solution-btn px-5";
+        solutionBtn2.innerText = "More About Solutions";
+        solutionBtn2.className = "btn btn-primary my-3 solution-btn px-4";
         solutionCard2.className = "card solution-opac text-center mobile-cards";
 
     }

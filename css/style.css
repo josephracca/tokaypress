@@ -122,7 +122,7 @@ Footer
     color: #FFFFFF;
     text-align: center;
     font-weight: 100;
-    padding: 10px 0 10px 0;
+    padding-top: 10%;
 }
 /*
 Slides
@@ -175,7 +175,7 @@ General
     background-color: white;
     border-color: white;
     font-family: 'Open Sans', sans-serif;
-    width: 100%;
+    width: 85%;
     box-shadow: 0px 3px 6px #00000029;
 }
 .seeLess:hover{
@@ -198,14 +198,29 @@ Selected
 .solution-selected{
     background-color: #FEDA31;
     border-radius: 30px;
+     border-radius: 30px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 0px 3px 6px #00000029;
 }
 .production-selected{
     background-color: #F06E49;
     border-radius: 30px;
+     border-radius: 30px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 0px 3px 6px #00000029;
 }
 .design-selected{
     background-color: #89DDD8;
     border-radius: 30px;
+     border-radius: 30px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 0px 3px 6px #00000029;
 }
 /*
 Opac
@@ -213,14 +228,29 @@ Opac
 .solution-opac{
     background-color: rgba(255, 240, 148, .45);
     border-radius: 30px;
+     border-radius: 30px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 0px 3px 6px #00000029;
 }
 .production-opac{
     background-color: rgba(249, 194, 175, .45);
     border-radius: 30px;
+     border-radius: 30px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 0px 3px 6px #00000029;
 }
 .design-opac{
     background-color: rgba(204, 241, 239, .45);
     border-radius: 30px;
+     border-radius: 30px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 0px 3px 6px #00000029;
 }
 
 .scrolling-wrapper {
