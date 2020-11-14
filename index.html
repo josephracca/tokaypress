@@ -14,6 +14,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  
+  <link rel="shortcut icon" href="./images/TPlogo.png" />
+  
   <title>Tokay Press</title>
 </head>
 
@@ -21,8 +24,34 @@
 <body class="background">
   <!-- HEADER/NAVBAR -->
 
+  <div class="container-fluid navblur">
+    <nav class="container navbar navbar-More About-lg navbar-light">
+      <!-- LOGOS -->
+      <a href="./index.html">
+      <img src="./images/TokayLogo.svg" class="py-2 d-none d-sm-flex" alt="The Tokay Press Logo" width=250px;>
+      <img src="./images/TokayLogo.svg" class="py-2 d-sm-none " alt="The Tokay Press Logo" width=150px;>
+    </a>
+
+      <!-- HAMBURGER -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-More Abouted="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- NAV LINKS -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav navLinks">
+          <a class="col-12 col-md text-right text-md px-4 nav-link" href="./pages/featured.html">Featured <span
+              class="sr-only">(current)</span></a>
+          <a class="col-12 col-md text-right text-md px-4 nav-link" href="#about">About</a>
+          <a class="col-12 col-md text-right text-md px-4 nav-link" href="#connect">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
   <!-- HERO/CAROUSEL -->
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="padding-top: 93.36px;">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="./images/thing.png" class="d-block w-100" alt="...">
@@ -36,7 +65,7 @@
     </div>
   </div>
 
-  <div class="container-fluid AboutUs pb-5 ">
+  <div id="about" class="container-fluid AboutUs pb-5 ">
     <div class="container d-none d-lg-block">
       <div class="row d-flex justify-content-center">
         <div class="col-12 text-center my-5  ">
@@ -49,8 +78,8 @@
             <img class="card-img-top rounded-circle my-4 design-img" src="./images/Design.png" alt="Card image cap">
             <div class="card-body">
               <h1 class="card-title mb-3">Design</h1>
-  
-              <a id="designBtn" class="btn btn-primary my-3 design-btn px-5">See More About Design</a>
+
+              <a id="designBtn" class="btn btn-primary my-3 design-btn px-5">More About Design</a>
             </div>
           </div>
         </div>
@@ -60,8 +89,8 @@
               alt="Card image cap">
             <div class="card-body">
               <h1 class="card-title mb-3">Production</h1>
-  
-              <a id="productionBtn" class="btn btn-primary my-3 productionBtn px-5">See More About Production</a>
+
+              <a id="productionBtn" class="btn btn-primary my-3 productionBtn px-5">More About Production</a>
             </div>
           </div>
         </div>
@@ -71,8 +100,8 @@
               alt="Card image cap">
             <div class="card-body">
               <h1 class="card-title mb-3">Solutions</h1>
-  
-              <a id="solutionBtn" class="btn btn-primary my-3 solution-btn px-5">See More About Solutions</a>
+
+              <a id="solutionBtn" class="btn btn-primary my-3 solution-btn px-5">More About Solutions</a>
             </div>
           </div>
         </div>
@@ -80,54 +109,173 @@
     </div>
   </div>
   <!--Mobile-->
+  <div class="AboutUs">
   <div class="container-fluid d-lg-none">
     <div class="row">
-      <div class="col-12 text-center my-5 AboutUs">
+      <div class="col-12 text-center my-5">
         <h1>About Us</h1>
-        <p><div class="fas fa-long-arrow-alt-left"></div> Swip to see more cards</p>
+        <p><div class="fas fa-long-arrow-alt-left"></div> Swipe to see more cards</p>
       </div>
     </div>
   </div>
 
   <div class="scrolling-wrapper d-lg-none ">
-       <div id="designCard2" class="card design-card text-center mobile-cards" style="width: 21rem;">
-            <img class="card-img-top rounded-circle my-4 design-img" src="./images/Design.png" alt="Card image cap">
-            <div class="card-body">
-              <h1 class="card-title mb-3 AboutUs">Design</h1>
-              <a id="designBtn2" class="btn btn-primary my-3 design-btn px-5">See More About Design</a>
-            </div>
-          </div>
+    <div id="designCard2" class="card design-card text-center mobile-cards" style="width: 21rem;">
+      <img class="card-img-top rounded-circle my-4 design-img" src="./images/Design.png" alt="Card image cap">
+      <div class="card-body">
+        <h1 class="card-title mb-3">Design</h1>
+        <a id="designBtn2" class="btn btn-primary my-3 design-btn px-5">More About Design</a>
+      </div>
+    </div>
 
-          <div id="productionCard2" class="card production-card text-center mobile-cards" style="width: 21rem;">
-            <img class="card-img-top rounded-circle my-4 production-img" src="./images/Valentines.jpg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h1 class="card-title mb-3 AboutUs">Production</h1>
-              <a id="productionBtn2" class="btn btn-primary my-3 productionBtn px-5">See More About Production</a>
-            </div>
-          </div>
+    <div id="productionCard2" class="card production-card text-center mobile-cards" style="width: 21rem;">
+      <img class="card-img-top rounded-circle my-4 production-img" src="./images/Valentines.jpg"
+      alt="Card image cap">
+      <div class="card-body">
+        <h1 class="card-title mb-3">Production</h1>
+        <a id="productionBtn2" class="btn btn-primary my-3 productionBtn px-5">More About Production</a>
+      </div>
+    </div>
 
-          <div id="solutionCard2" class="card solution-card text-center mobile-cards" style="width: 21rem;">
-            <img class="card-img-top rounded-circle my-4 solution-img" src="./images/solutions-square.jpg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h1 class="card-title mb-3 AboutUs">Solutions</h1>
-              <a id="solutionBtn2" class="btn btn-primary my-3 solution-btn px-5">See More About Solutions</a>
-            </div>
-          </div>
+    <div id="solutionCard2" class="card solution-card text-center mobile-cards" style="width: 21rem;">
+      <img class="card-img-top rounded-circle my-4 solution-img" src="./images/solutions-square.jpg"
+        alt="Card image cap">
+      <div class="card-body">
+        <h1 class="card-title mb-3">Solutions</h1>
+        <a id="solutionBtn2" class="btn btn-primary my-3 solution-btn px-5">More About Solutions</a>
+      </div>
+    </div>
   </div>
-  
+</div>
+
   <!--
       Slides
     -->
   <div id="slideInject">
-    
+
+  </div>
+
+  <!-- CONNECT/CONTACT -->
+
+	<div id="connect" class="container-fluid connectHolder boxShadow pt-5">
+		<div class="container">
+			<div class="row pb-5 text-center text-md-left">
+				<!-- SOCIAL MEDIA LINKS -->
+				<div class="col-12 col-md-6 pr pr-md-5">
+
+					<h2 class="pb-0 pb-lg-5">
+						Connect with Us!</h2>
+					<hr>
+					<div class="row">
+						<div class="col">
+							<a href="https://www.facebook.com/tokaypress" target="_blank">
+								<h2><img src="./images/fb_logo.svg" alt="facebook logo" width="72px" class="px-3"><br class="d-block d-sm-none">Tokay
+									Press</h2>
+							</a>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+
+						<div class="col">
+							<a href="https://www.instagram.com/tokaypress/" target="_blank">
+								<h2><img src="./images/ig_logo.svg" alt="instagram logo" width="72px"
+										class="px-3"><br class="d-block d-sm-none">@tokaypress</h2>
+							</a>
+						</div>
+
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col">
+							<a href="https://www.instagram.com/tokaypress/" target="_blank">
+								<h2><img src="./images/twitter_logo.svg" alt="twitter logo" width="72px"
+										class="px-3"><br class="d-block d-sm-none">@tokaypress</h2>
+							</a>
+						</div>
+					</div>
+					<hr class="pb-5">
+				</div>
+
+				<!-- EMAIL FORM -->
+				<div class="col-12 col-md-6">
+					<h2>Have a Project?</h2>
+					<p>We specialize in custom solutions and we would love to hear about and work with you on your next
+						idea!</p>
+					<form>
+						<div class="row">
+							<div class="form-group col-6">
+								<label for="userFullName" class="sr-only">Your Full Name</label>
+								<input type="text" class="form-control" id="userFullName" placeholder="Your Full Name">
+							</div>
+							<div class="form-group col-6">
+								<label for="userEmail" class="sr-only">Your Email address</label>
+								<input type="email" class="form-control" id="userEmail" placeholder="name@example.com">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="exampleFormControlTextarea1" class="sr-only">Example textarea</label>
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="7"
+								placeholder="Tell us more about your project!"></textarea>
+						</div>
+						<div class="row">
+							<div class="col d-flex justify-content-end">
+								<button id="messageBtn" type="button" class="btn btn-brightblue"><i
+										class="far fa-envelope pr-1"></i> <b>SEND MESSAGE</b></button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+  <!-- MAPS -->
+  <div class="container-fluid mapHolder py-5 boxShadow">
+    <div class="container">
+
+      <div class="row">
+        <!-- LOGO -->
+        <div class="d-flex d-sm-none col-12 col-sm-5 col-lg-3 order-1 order-sm-1">
+          <div class="container-fluid d-flex justify-content-center pb-4">
+            <img src="./images/TokayLogoFull.svg" alt="Tokay Press Logo" width="50%" class="">
+          </div>
+        </div>
+
+        <div class="d-none d-sm-block col-12 col-sm-5 col-lg-3 order-1 order-sm-1">
+          <img src="./images/TokayLogoFull.svg" alt="Tokay Press Logo" width="70%" class="">
+        </div>
+
+        <!-- CONACT INFO -->
+        <div class="col-12 col-sm-7 col-lg-3 order-1 order-sm-1 text-center text-sm-left">
+          <h2>Visit Us!</h2>
+          <p>948 W. Fremont St.
+            <br> Stockton, California 95203
+          </p>
+          <hr>
+          <h2>Email Us!</h2>
+          <a href="mailto: orders@tokaypress.com">orders@tokaypress.com</a>
+          <br>
+          <hr>
+          <h2>Call Us!</h2>
+          <p class="pb-4 p-lg-0">209.547.0377</p>
+        </div>
+
+        <!-- LOCATION -->
+        <div class="col-12 col-lg-6 order-2 order-sm-1">
+          <iframe title="a map of Tokay Press' location" class="map-border-white"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d961.5842225574262!2d-121.30544314753945!3d37.9554386669924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80900aaf021b69e3%3A0xf58fe15577b56c57!2sTokay%20Press%20Inc!5e0!3m2!1sen!2sus!4v1605246255566!5m2!1sen!2sus"
+            width="100%" height="300px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+
+    </div>
   </div>
 
 
 
   <!--Footer-->
-  <div class="container-fluid footer-index py-4">
+  <div class="container-fluid footer py-4">
     <div class="row">
       <div class="col text-center">
         <p>Tokay Press All Rights Reserved <br> Copyright © 2010-2014</p>
