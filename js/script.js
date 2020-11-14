@@ -229,7 +229,7 @@ function solutionsInjection(){
     //Create elements
     //= document.createElement('div')
     let containerFluid = document.createElement('div');
-    containerFluid.className = "container-fluid mt-5 solutions-card-slides pb-5";
+    containerFluid.className = "container-fluid solutions-card-slides pb-5";
 
     let container = document.createElement('div');
     container.className = "container";
@@ -341,7 +341,7 @@ function productionInjection(){
     //Create elements
     //= document.createElement('div')
     let containerFluid = document.createElement('div');
-    containerFluid.className = "container-fluid mt-5 production-card-slides pb-5";
+    containerFluid.className = "container-fluid  production-card-slides pb-5";
 
     let container = document.createElement('div');
     container.className = "container";
@@ -447,7 +447,7 @@ function designInjection(){
     //Create elements
     //= document.createElement('div')
     let containerFluid = document.createElement('div');
-    containerFluid.className = "container-fluid mt-5 design-card-slides pb-5";
+    containerFluid.className = "container-fluid  design-card-slides pb-5";
 
     let container = document.createElement('div');
     container.className = "container";
