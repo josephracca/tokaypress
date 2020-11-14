@@ -533,11 +533,11 @@ hr {
     max-height: 700px;
 }
 
-.fitCover{
+/* .fitCover{
     height: auto;
     width: 100%;
-    object-fit: contain;
-}
+    object-fit: cover;
+} */
 
 a {
     color: #2e2e2e;
