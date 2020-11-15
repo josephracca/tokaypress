@@ -520,3 +520,14 @@ function designInjection(){
     innerRow.appendChild(imgCol3);
     imgCol3.appendChild(imgTag3);
 }
+
+// MESSAGE BUTTON
+let messageBtn = document.getElementById("messageBtn");
+
+messageBtn.addEventListener("click", function () {
+  messageBtn.classList.add('messageSent');
+  messageBtn.innerText = "MESSAGE SENT";
+  alert("Message Sent!");
+
+  messageBtn.innerHTML = '<b>MESSAGE SENT! </b><i class="far fa-paper-plane pl-1"></i>';
+});

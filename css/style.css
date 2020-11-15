@@ -33,7 +33,7 @@ Design
     color: #030303;
     background-color: #89DDD8;
     border-color: #89DDD8;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     box-shadow: 0px 3px 6px #00000029;
 }
 
@@ -73,7 +73,7 @@ Production
     color: #030303;
     background-color: #FF9D81;
     border-color: #FF9D81;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     box-shadow: 0px 3px 6px #00000029;
 }
 
@@ -113,7 +113,7 @@ Solution
     color: #030303;
     background-color: #FFDA00;
     border-color: #FFDA00;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     box-shadow: 0px 3px 6px #00000029;
 }
 
@@ -152,7 +152,7 @@ Design Slides
 .design-card-slides {
     background-image: url(../images/Design-background.png);
     background-size: 100% 100%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 /*
@@ -162,7 +162,7 @@ Production-Slides
 .production-card-slides {
     background-image: url(../images/Production-background.png);
     background-size: 100% 100%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 /*
@@ -172,7 +172,7 @@ solutions-Slides
 .solutions-card-slides {
     background-image: url(../images/solutions-background.png);
     background-size: 100% 100%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 /*
@@ -194,7 +194,7 @@ General
     color: #030303;
     background-color: white;
     border-color: white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     width: 85%;
     box-shadow: 0px 3px 6px #00000029;
 }
