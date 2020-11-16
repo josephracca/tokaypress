@@ -115,7 +115,6 @@ designBtn.addEventListener('click', function(e){
         break;
     }
     seeLess();
-    
 });
 
 productionBtn.addEventListener('click', function(e){
@@ -176,7 +175,6 @@ designBtn2.addEventListener('click', function(e){
         break;
     }
     seeLess();
-    
 });
 
 productionBtn2.addEventListener('click', function(e){
