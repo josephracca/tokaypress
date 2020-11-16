@@ -67,9 +67,9 @@ function myFunction(imgs) {
 
 // MESSAGE BUTTON
 let messageBtn = document.getElementById("messageBtn");
-let inputName = document.getElementById('inputName');
-let inputEmail = document.getElementById('inputEmail');
-let inputMessage = document.getElementById('inputMessage');
+let inputName = document.getElementById('userFullName');
+let inputEmail = document.getElementById('userEmail');
+let inputMessage = document.getElementById('exampleFormControlTextarea1');
 
 
 console.log(inputName.value);
