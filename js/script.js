@@ -520,3 +520,23 @@ function designInjection(){
     innerRow.appendChild(imgCol3);
     imgCol3.appendChild(imgTag3);
 }
+
+// MESSAGE BUTTON
+let messageBtn = document.getElementById("messageBtn");
+let inputName = document.getElementById('userFullName');
+let inputEmail = document.getElementById('userEmail');
+let inputMessage = document.getElementById('exampleFormControlTextarea1');
+
+
+console.log(inputName.value);
+messageBtn.addEventListener("click", function () {
+ if (inputName.value != "" && inputEmail.value !="" && inputEmail.value!= ""){
+    messageBtn.classList.add('messageSent');
+    messageBtn.innerText = "MESSAGE SENT";
+    alert("Thank you, "+ inputName.value+"! We will contact you soon at the same email ("+inputEmail.value+").");
+  
+    messageBtn.innerHTML = '<b>MESSAGE SENT! </b><i class="far fa-paper-plane pl-1"></i>';
+ } else{
+    alert("Please fill out all the forms before sending.");
+ }
+});
