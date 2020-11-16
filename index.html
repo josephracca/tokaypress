@@ -44,7 +44,7 @@
 				<div class="navbar-nav navLinks">
 					<a class="col-12 col-md text-right text-md px-4 nav-link" href="./pages/featured.html">Featured <span
 							class="sr-only">(current)</span></a>
-					<a class="col-12 col-md text-right text-md px-4 nav-link" href="#about">About</a>
+					<a class="col-12 col-md text-right text-md px-4 nav-link" href="#about" >About</a>
 					<a class="col-12 col-md text-right text-md px-4 nav-link" href="#connect">Contact</a>
 				</div>
 			</div>
@@ -112,88 +112,89 @@
 	</div>
 
 <!--Computer cards-->
-  <div id="about" class="anchor container-fluid AboutUs d-none d-lg-block  pb-5">
-    <div class="container ">
-      <div class="row d-flex justify-content-center">
-        <div class="col-12 text-center my-5  ">
+  <div id="about" class="anchor AboutUs">
+    <div  class=" container-fluid  d-none d-lg-block  pb-5">
+      <div class="container ">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 text-center my-5  ">
+            <h1>About Us</h1>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-4 d-flex justify-content-center  ">
+            <div id="designCard" class="card design-card text-center" style="width: 25rem;">
+              <img class="card-img-top rounded-circle my-4 design-img" src="./images/Design.png" alt="Card image cap">
+              <div class="card-body">
+                <h1 class="card-title mb-3">Design</h1>
+    
+                <a id="designBtn" class="btn btn-primary my-3 design-btn px-5">More About Design</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 d-flex justify-content-center ">
+            <div id="productionCard" class="card production-card text-center" style="width: 25rem;">
+              <img class="card-img-top rounded-circle my-4 production-img" src="./images/Valentines.jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h1 class="card-title mb-3">Production</h1>
+    
+                <a id="productionBtn" class="btn btn-primary my-3 productionBtn px-5">More About Production</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 d-flex justify-content-center ">
+            <div id="solutionCard" class="card solution-card text-center" style="width: 25rem;">
+              <img class="card-img-top rounded-circle my-4 solution-img" src="./images/solutions-square.jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h1 class="card-title mb-3">Solutions</h1>
+    
+                <a id="solutionBtn" class="btn btn-primary my-3 solution-btn px-5">More About Solutions</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Mobile-->
+    <div>
+    <div class="container-fluid d-lg-none ">
+      <div class="row">
+        <div  class="col-12 text-center my-5">
           <h1>About Us</h1>
-        </div>
-      </div>
-      <div class="row ">
-        <div class="col-4 d-flex justify-content-center  ">
-          <div id="designCard" class="card design-card text-center" style="width: 25rem;">
-            <img class="card-img-top rounded-circle my-4 design-img" src="./images/Design.png" alt="Card image cap">
-            <div class="card-body">
-              <h1 class="card-title mb-3">Design</h1>
-
-              <a id="designBtn" class="btn btn-primary my-3 design-btn px-5">More About Design</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-4 d-flex justify-content-center ">
-          <div id="productionCard" class="card production-card text-center" style="width: 25rem;">
-            <img class="card-img-top rounded-circle my-4 production-img" src="./images/Valentines.jpg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h1 class="card-title mb-3">Production</h1>
-
-              <a id="productionBtn" class="btn btn-primary my-3 productionBtn px-5">More About Production</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-4 d-flex justify-content-center ">
-          <div id="solutionCard" class="card solution-card text-center" style="width: 25rem;">
-            <img class="card-img-top rounded-circle my-4 solution-img" src="./images/solutions-square.jpg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h1 class="card-title mb-3">Solutions</h1>
-
-              <a id="solutionBtn" class="btn btn-primary my-3 solution-btn px-5">More About Solutions</a>
-            </div>
-          </div>
+          <p><div class="fas fa-long-arrow-alt-left"></div> Swipe to see more cards</p>
         </div>
       </div>
     </div>
-  </div>
-  <!--Mobile-->
-  <div class="AboutUs">
-  <div class="container-fluid d-lg-none ">
-    <div class="row">
-      <div class="col-12 text-center my-5">
-        <h1>About Us</h1>
-        <p><div class="fas fa-long-arrow-alt-left"></div> Swipe to see more cards</p>
+    
+    <div  class="scrolling-wrapper d-lg-none pb-5 ">
+      <div id="designCard2" class="card design-card text-center mobile-cards ml-3" style="width: 21rem;">
+        <img class="card-img-top rounded-circle my-4 design-img" src="./images/Design.png" alt="Card image cap">
+        <div class="card-body">
+          <h1 class="card-title mb-3">Design</h1>
+          <a id="designBtn2" class="btn btn-primary my-3 design-btn px-4">More About Design</a>
+        </div>
       </div>
-    </div>
-  </div>
-
-  <div class="scrolling-wrapper d-lg-none pb-5 ">
-    <div id="designCard2" class="card design-card text-center mobile-cards" style="width: 21rem;">
-      <img class="card-img-top rounded-circle my-4 design-img" src="./images/Design.png" alt="Card image cap">
-      <div class="card-body">
-        <h1 class="card-title mb-3">Design</h1>
-        <a id="designBtn2" class="btn btn-primary my-3 design-btn px-4">More About Design</a>
-      </div>
-    </div>
-
-    <div id="productionCard2" class="card production-card text-center mobile-cards" style="width: 21rem;">
-      <img class="card-img-top rounded-circle my-4 production-img" src="./images/Valentines.jpg"
-      alt="Card image cap">
-      <div class="card-body">
-        <h1 class="card-title mb-3">Production</h1>
-        <a id="productionBtn2" class="btn btn-primary my-3 productionBtn px-4">More About Production</a>
-      </div>
-    </div>
-
-    <div id="solutionCard2" class="card solution-card text-center mobile-cards" style="width: 21rem;">
-      <img class="card-img-top rounded-circle my-4 solution-img" src="./images/solutions-square.jpg"
+    
+      <div id="productionCard2" class="card production-card text-center mobile-cards mx-5" style="width: 21rem;">
+        <img class="card-img-top rounded-circle my-4 production-img" src="./images/Valentines.jpg"
         alt="Card image cap">
-      <div class="card-body">
-        <h1 class="card-title mb-3">Solutions</h1>
-        <a id="solutionBtn2" class="btn btn-primary my-3 solution-btn px-4">More About Solutions</a>
+        <div class="card-body">
+          <h1 class="card-title mb-3">Production</h1>
+          <a id="productionBtn2" class="btn btn-primary my-3 productionBtn ">More About Production</a>
+        </div>
+      </div>
+    
+      <div id="solutionCard2" class="card solution-card text-center mobile-cards mr-3" style="width: 21rem;">
+        <img class="card-img-top rounded-circle my-4 solution-img" src="./images/solutions-square.jpg"
+          alt="Card image cap">
+        <div class="card-body">
+          <h1 class="card-title mb-3">Solutions</h1>
+          <a id="solutionBtn2" class="btn btn-primary my-3 solution-btn px-4">More About Solutions</a>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
   <!--
       Slides
