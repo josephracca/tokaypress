@@ -77,11 +77,11 @@ messageBtn.addEventListener("click", function () {
  if (inputName.value != "" && inputEmail.value !="" && inputEmail.value!= ""){
     messageBtn.classList.add('messageSent');
     messageBtn.innerText = "MESSAGE SENT";
-    alert("Thank you, "+ inputName.value+"! We will contact you soon at the same email ("+inputEmail.value+").");
+    alert("Thank you, "+ inputName.value+"! We will contact you soon at the email you provided: ("+inputEmail.value+").");
   
     messageBtn.innerHTML = '<b>MESSAGE SENT! </b><i class="far fa-paper-plane pl-1"></i>';
  } else{
-    alert("Please fill out all the forms before sending.");
+    alert("Uh oh! Please fill out all fields before sending.");
  }
 });
 
