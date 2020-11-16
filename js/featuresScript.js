@@ -67,12 +67,21 @@ function myFunction(imgs) {
 
 // MESSAGE BUTTON
 let messageBtn = document.getElementById("messageBtn");
+let inputName = document.getElementById('inputName');
+let inputEmail = document.getElementById('inputEmail');
+let inputMessage = document.getElementById('inputMessage');
 
+
+console.log(inputName.value);
 messageBtn.addEventListener("click", function () {
-  messageBtn.classList.add('messageSent');
-  messageBtn.innerText = "MESSAGE SENT";
-  alert("Message Sent!");
-
-  messageBtn.innerHTML = '<b>MESSAGE SENT! </b><i class="far fa-paper-plane pl-1"></i>';
+ if (inputName.value != "" && inputEmail.value !="" && inputEmail.value!= ""){
+    messageBtn.classList.add('messageSent');
+    messageBtn.innerText = "MESSAGE SENT";
+    alert("Thank you, "+ inputName.value+"! We will contact you soon at the same email ("+inputEmail.value+").");
+  
+    messageBtn.innerHTML = '<b>MESSAGE SENT! </b><i class="far fa-paper-plane pl-1"></i>';
+ } else{
+    alert("Please fill out all the forms before sending.");
+ }
 });
 

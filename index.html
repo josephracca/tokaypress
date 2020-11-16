@@ -195,7 +195,7 @@
       </div>
     </div>
   </div>
-
+  </div>
   <!--
       Slides
     -->
@@ -205,7 +205,7 @@
 
   <!-- CONNECT/CONTACT -->
 
-	<div id="connect" class="container-fluid connectHolder boxShadow pt-5">
+  <div id="connect" class="container-fluid connectHolder boxShadow pt-5">
 		<div class="container">
 			<div class="row pb-5 text-center text-md-left">
 				<!-- SOCIAL MEDIA LINKS -->
@@ -217,7 +217,8 @@
 					<div class="row">
 						<div class="col">
 							<a href="https://www.facebook.com/tokaypress" target="_blank">
-								<h2><img src="./images/fb_logo.svg" alt="facebook logo" width="72px" class="px-3"><br class="d-block d-sm-none">Tokay
+								<h2><img src="../images/fb_logo.svg" alt="facebook logo" width="72px" class="px-3"><br
+										class="d-block d-sm-none">Tokay
 									Press</h2>
 							</a>
 						</div>
@@ -227,8 +228,8 @@
 
 						<div class="col">
 							<a href="https://www.instagram.com/tokaypress/" target="_blank">
-								<h2><img src="./images/ig_logo.svg" alt="instagram logo" width="72px"
-										class="px-3"><br class="d-block d-sm-none">@tokaypress</h2>
+								<h2><img src="../images/ig_logo.svg" alt="instagram logo" width="72px" class="px-3"><br
+										class="d-block d-sm-none">@tokaypress</h2>
 							</a>
 						</div>
 
@@ -237,7 +238,7 @@
 					<div class="row">
 						<div class="col">
 							<a href="https://www.twitter.com/tokaypress/" target="_blank">
-								<h2><img src="./images/twitter_logo.svg" alt="twitter logo" width="72px"
+								<h2><img src="../images/twitter_logo.svg" alt="twitter logo" width="72px"
 										class="px-3"><br class="d-block d-sm-none">@tokaypress</h2>
 							</a>
 						</div>
@@ -250,75 +251,89 @@
 					<h2>Have a Project?</h2>
 					<p>We specialize in custom solutions and we would love to hear about and work with you on your next
 						idea!</p>
-					<form>
-						<div class="row">
-							<div class="form-group col-12 col-md-6">
-								<label for="userFullName" class="sr-only">Your Full Name</label>
-								<input  type="text" class="form-control" id="userFullName" placeholder="Your Full Name">
+						<form>
+							<div class="row">
+								<div class="form-group col-12 col-md-6">
+									<label for="userFullName" class="sr-only">Your Full Name</label>
+									<input id="inputName" type="text" class="form-control" id="userFullName" placeholder="Your Full Name">
+								</div>
+								<div class="form-group col-12 col-md-6">
+									<label for="userEmail" class="sr-only">Your Email address</label>
+									<input id="inputEmail" type="email" class="form-control" id="userEmail" placeholder="name@example.com">
+								</div>
 							</div>
-							<div class="form-group col-12 col-md-6">
-								<label for="userEmail" class="sr-only">Your Email address</label>
-								<input type="email" class="form-control" id="userEmail" placeholder="name@example.com">
+							<div class="form-group">
+								<label for="exampleFormControlTextarea1" class="sr-only">Example textarea</label>
+								<textarea id="inputMessage" class="form-control" id="exampleFormControlTextarea1" rows="7"
+									placeholder="Tell us more about your project!"></textarea>
 							</div>
-						</div>
-						<div class="form-group">
-							<label for="exampleFormControlTextarea1" class="sr-only">Example textarea</label>
-							<textarea class="form-control" id="exampleFormControlTextarea1" rows="7"
-								placeholder="Tell us more about your project!"></textarea>
-						</div>
-						<div class="row">
-							<div class="col d-flex justify-content-end">
-								<button id="messageBtn" type="button" class="btn btn-brightblue"><i
-										class="far fa-envelope pr-1"></i> <b>SEND MESSAGE</b></button>
+							<div class="row">
+								<div class="col d-flex justify-content-end">
+									<button id="messageBtn" type="button" class="btn btn-brightblue"><i
+											class="far fa-envelope pr-1"></i> <b>SEND MESSAGE</b></button>
+								</div>
 							</div>
-						</div>
-					</form>
+						</form>
 				</div>
 			</div>
 		</div>
 	</div>
 
-  <!-- MAPS -->
-  <div class="container-fluid mapHolder py-5 boxShadow">
-    <div class="container">
+	<!-- FOOTER -->
 
-      <div class="row">
-        <!-- LOGO -->
-        <div class="d-flex d-sm-none col-12 col-sm-5 col-lg-3 order-1 order-sm-1">
-          <div class="container-fluid d-flex justify-content-center pb-4">
-            <img src="./images/TokayLogoFull.svg" alt="Tokay Press Logo" width="50%" class="">
-          </div>
-        </div>
+	<!-- MODAL (FOR INJECTION) -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content shadow-lg">
+				<div id="inject" class="modal-body">
+				</div>
+			</div>
+		</div>
+	</div>
 
-        <div class="d-none d-sm-block col-12 col-sm-5 col-lg-3 order-1 order-sm-1">
-          <img src="./images/TokayLogoFull.svg" alt="Tokay Press Logo" width="70%" class="">
-        </div>
 
-        <!-- CONACT INFO -->
-        <div class="col-12 col-sm-7 col-lg-3 order-1 order-sm-1 text-center text-sm-left">
-          <h2>Visit Us!</h2>
-          <p>948 W. Fremont St.
-            <br> Stockton, California 95203
-          </p>
-          <hr>
-          <h2>Email Us!</h2>
-          <a href="mailto: orders@tokaypress.com">orders@tokaypress.com</a>
-          <br>
-          <hr>
-          <h2>Call Us!</h2>
-          <p class="pb-4 p-lg-0">209.547.0377</p>
-        </div>
+	<!-- MAPS -->
+	<div class="container-fluid mapHolder py-5 boxShadow">
+		<div class="container">
 
-        <!-- LOCATION -->
-        <div class="col-12 col-lg-6 order-2 order-sm-1">
-          <iframe title="a map of Tokay Press' location" class="map-border-white"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d961.5842225574262!2d-121.30544314753945!3d37.9554386669924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80900aaf021b69e3%3A0xf58fe15577b56c57!2sTokay%20Press%20Inc!5e0!3m2!1sen!2sus!4v1605246255566!5m2!1sen!2sus"
-            width="100%" height="300px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </div>
-      </div>
+			<div class="row">
+				<!-- LOGO -->
+				<div class="d-flex d-sm-none col-12 col-sm-5 col-lg-3 order-1 order-sm-1">
+					<div class="container-fluid d-flex justify-content-center pb-4">
+						<img src="../images/TokayLogoFull.svg" alt="Tokay Press Logo" width="50%" class="">
+					</div>
+				</div>
 
-    </div>
-  </div>
+				<div class="d-none d-md-block col-12 col-sm-5 col-lg-3 order-1 order-sm-1">
+					<img src="../images/TokayLogoFull.svg" alt="Tokay Press Logo" width="70%" class="">
+				</div>
+
+				<!-- CONACT INFO -->
+				<div class="col-12 col-sm-7 col-lg-3 order-1 order-sm-1 text-center text-sm-left">
+					<h2>Visit Us!</h2>
+					<p>948 W. Fremont St.
+						<br> Stockton, California 95203
+					</p>
+					<hr>
+					<h2>Email Us!</h2>
+					<a href="mailto: orders@tokaypress.com">orders@tokaypress.com</a>
+					<br>
+					<hr>
+					<h2>Call Us!</h2>
+					<p class="pb-4 p-lg-0">209.547.0377</p>
+				</div>
+
+				<!-- LOCATION -->
+				<div class="col-12 col-lg-6 order-2 order-sm-1">
+					<iframe title="a map of Tokay Press' location" class="map-border-white"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d961.5842225574262!2d-121.30544314753945!3d37.9554386669924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80900aaf021b69e3%3A0xf58fe15577b56c57!2sTokay%20Press%20Inc!5e0!3m2!1sen!2sus!4v1605246255566!5m2!1sen!2sus"
+						width="100%" height="300px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</div>
+			</div>
+
+		</div>
+	</div>
 
 
 
