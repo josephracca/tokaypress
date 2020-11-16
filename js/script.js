@@ -30,7 +30,7 @@ function seeLess(){
         //Mobile
         designBtn2.innerText = "See Less"
         designBtn2.className = "btn btn-primary my-3 px-5 seeLess"
-        designCard2.className = "card design-selected text-center mobile-cards";
+        designCard2.className = "card design-selected text-center mobile-cards ml-3";
     } else{
         designBtn.innerText = "More About Design"
         designBtn.className = "btn btn-primary my-3 design-btn px-5";
@@ -38,7 +38,7 @@ function seeLess(){
         //mobile
         designBtn2.innerText = "More About Design"
         designBtn2.className = "btn btn-primary my-3 design-btn px-5";
-        designCard2.className = "card design-opac text-center mobile-cards";
+        designCard2.className = "card design-opac text-center mobile-cards ml-3";
 
     }
 
@@ -50,7 +50,7 @@ function seeLess(){
         //mobile
         productionBtn2.innerText = "See Less";
         productionBtn2.className = "btn btn-primary my-3 px-4 seeLess";
-        productionCard2.className = "card production-selected text-center mobile-cards";
+        productionCard2.className = "card production-selected text-center mobile-cards mx-3";
     } else{
         productionBtn.innerText = "More About Production"
         productionBtn.className = "btn btn-primary my-3 productionBtn px-5";
@@ -58,7 +58,7 @@ function seeLess(){
         //Mobile
         productionBtn2.innerText = "More About Production"
         productionBtn2.className = "btn btn-primary my-3 productionBtn px-4";
-        productionCard2.className = "card production-opac text-center mobile-cards";
+        productionCard2.className = "card production-opac text-center mobile-cards mx-3";
         
 
     }
@@ -71,7 +71,7 @@ function seeLess(){
         //Mobile
         solutionBtn2.innerText = "See Less"
         solutionBtn2.className = "btn btn-primary my-3 px-4 seeLess";
-        solutionCard2.className = "card solution-selected text-center mobile-cards";
+        solutionCard2.className = "card solution-selected text-center mobile-cards mr-3 ";
     } else{
         solutionBtn.innerText = "More About Solutions";
         solutionBtn.className = "btn btn-primary my-3 solution-btn px-5";
@@ -79,7 +79,7 @@ function seeLess(){
         //Mobile
         solutionBtn2.innerText = "More About Solutions";
         solutionBtn2.className = "btn btn-primary my-3 solution-btn px-4";
-        solutionCard2.className = "card solution-opac text-center mobile-cards";
+        solutionCard2.className = "card solution-opac text-center mobile-cards mr-3 ";
 
     }
     if(slideInject.innerHTML == ""){
@@ -87,9 +87,9 @@ function seeLess(){
         productionCard.className = "card production-card text-center";
         solutionCard.className = "card solution-card text-center";
         //Mobile
-        designCard2.className = "card design-card text-center mobile-cards";
-        productionCard2.className = "card production-card text-center mobile-cards";
-        solutionCard2.className = "card solution-card text-center mobile-cards";
+        designCard2.className = "card design-card text-center mobile-cards ml-3";
+        productionCard2.className = "card production-card text-center mobile-cards mx-3";
+        solutionCard2.className = "card solution-card text-center mobile-cards mr-3 ";
         designGate = true;
             productionGate = true;
             solutionGate= true;
