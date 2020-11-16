@@ -319,6 +319,14 @@ h1, h2 {
     font-family: 'Yeseva One', cursive;
 }
 
+h1{
+    font-size:40px
+}
+
+h2{
+    font-size:36px
+}
+
 .featuredCard {
     border-radius: 30px;
     border-width: 10px;
@@ -439,6 +447,10 @@ hr {
     border-bottom: 0px solid #dee2e6;
     border-top-left-radius: calc(.3rem - 1px);
     border-top-right-radius: calc(.3rem - 1px)
+}
+
+.modal-footer {
+    border-top: 0px solid #dee2e6;
 }
 
 .navLinks {
