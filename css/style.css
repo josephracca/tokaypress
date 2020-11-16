@@ -604,6 +604,10 @@ a:hover {
     .carouselPad {
         padding-top: 93.36px;
     }
+
+    .anchor {
+        padding-top: 93.36px;
+    }
 }
 
 .carouselSmallCap {
@@ -613,4 +617,8 @@ a:hover {
     padding: 25px;
     position: 100px;
     /* margin: 20px 20px 20px 20px; */
+}
+
+.anchor {
+    padding-top: 68.81px;
 }
